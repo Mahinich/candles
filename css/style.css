@@ -4,13 +4,14 @@
   --main2: #A5978E;
   --button: #FFBD59;
   --main-font: #000;
+  --font-white: #FAFAFA;
   --burger: #7B6152;
 }
 /* VARIABLES */
 
 /* COMMON */
 .container {
-  max-width: 73.75rem;
+  max-width: 72.625rem;
   padding-left: .625rem;
   padding-right: .625rem;
   margin: 0 auto;
@@ -138,6 +139,61 @@ main {
 }
 
 /* FIRST SECTION END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT US START*/
+.about-us {
+  background-color: var(--main2);
+}
+
+.about-us__wrap {
+  padding: 3.125rem 0 3.75rem 0;
+  display: flex;
+}
+
+.about-us__text {
+  min-width: 23.125rem;
+  color: var(--font-white);
+  margin-right: 6.875rem;
+}
+
+.about-us__title{
+  font-family: 'Yeseva One';
+  font-size: 40px;
+  line-height: 2.875rem;
+  margin-bottom: .938rem;
+}
+.about-us__descr{
+  font-family: Comfortaa;
+  font-size: .875rem;
+}
+
+.about-us__descr:first-of-type {
+  margin-bottom: 1.25rem;
+}
+
+.about-us__images{
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+  margin-bottom: 48px;
+}
+/* ABOUT US END*/
 
 /* FOOTER START */
 
