@@ -89,17 +89,6 @@ main {
 
 /* MAIN END */
 
-
-
-
-
-
-
-
-
-
-
-
 /* FIRST SECTION START*/
 
 .first-section {
@@ -139,6 +128,7 @@ main {
   border: none;
   background-color: var(--button);
   font-size: .875rem;
+  cursor: pointer;
 }
 
 .first-section__img {
@@ -375,7 +365,7 @@ main {
   }
   
   .first-section__img {
-    left: 8.438rem;
+    left: 8.125rem;
   }
 
   .footer {
