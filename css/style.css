@@ -162,14 +162,15 @@ main {
 }
 
 .about-us__wrap {
-  padding: 3.125rem 0 3.75rem 0;
+  padding-top: 3.125rem;
+  padding-bottom:3.75rem;
   display: flex;
+  align-items: center;
 }
 
 .about-us__text {
   min-width: 23.125rem;
   color: var(--font-white);
-  margin-right: 6.875rem;
 }
 
 .about-us__title{
@@ -187,11 +188,40 @@ main {
   margin-bottom: 1.25rem;
 }
 
-.about-us__images{
+.about-us__images {
   display: flex;
   align-items: center;
-  column-gap: 1.25rem;
-  margin-bottom: 48px;
+  gap: 0 1.25rem;
+  padding-left: 6.875rem;
+  padding-bottom: 1.813rem;
+  position: relative;
+}
+
+.about-us__images::before {
+  content: url('../images/about-us/tiny-candle-icon.png');
+  position: absolute;
+  margin-top: 1.75rem;
+  left: 0;
+  bottom: 0;
+}
+
+.about-us__images::after {
+  content: '';
+  position: absolute;
+  width: 1000%;
+  height: 1px;
+  background-color: var(--burger);
+  left: 1.313rem;
+  bottom: .813rem;
+}
+
+.about-us__img {
+  margin-bottom: .688rem;
+}
+
+.about-us__img-descr {
+  color: var(--font-white);
+  font-size: .688rem;
 }
 /* ABOUT US END*/
 
@@ -270,6 +300,14 @@ main {
   .first-section__img {
     left: 18.625rem;
   }
+
+  .about-us__text {
+    min-width: 18.75rem;
+  }
+
+  .about-us__images {
+    padding-left: 1.25rem;
+  }
 }
 
 @media (max-width: 54.687rem) {
@@ -310,11 +348,27 @@ main {
   .first-section__img {
     left: 180px;
   }
+
+  .about-us__img:first-child {
+    height: 120px;
+    width: 120px;
+  }
+  
+  .about-us__text {
+    min-width: 12.5rem;
+  }
+
+  .about-us__title {
+    font-size: 15px;
+  }
+
+  .about-us__descr {
+    font-size: 10px;
+  }
   
   .footer__wrap {
     flex-wrap: wrap;
   }
-
 
   .footer__contacts {
     align-items: center;
