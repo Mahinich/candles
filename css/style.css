@@ -594,5 +594,19 @@ main {
     left: 11.085rem;
     z-index: 0;
   }
+
+  .about-us__wrap {
+    padding-top: 0;
+    padding-bottom: 1.25rem;
+  }
+  
+  .about-us__text {
+    min-width: 14.625rem;
+  }
+
+  .about-us__descr {
+    font-size: .5rem;
+    line-height: .563rem;
+  }
 }
 /* MEDIA END*/
