@@ -140,22 +140,6 @@ main {
 
 /* FIRST SECTION END */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ABOUT US START*/
 .about-us {
   background-color: var(--main2);
@@ -198,7 +182,7 @@ main {
 }
 
 .about-us__images::before {
-  content: url('../images/about-us/tiny-candle-icon.png');
+  content: url('../images/icons/tiny-candle-icon.png');
   position: absolute;
   margin-top: 1.75rem;
   left: 0;
@@ -224,6 +208,108 @@ main {
   font-size: .688rem;
 }
 /* ABOUT US END*/
+
+
+
+
+
+
+
+
+
+/* OUR GOOD START */
+.our-goods__wrap {
+  display: flex;
+  padding-top: 9.375rem;
+  padding-bottom: 9.375rem;
+}
+
+.our-goods__text {
+  min-width: 23.125rem;
+}
+
+.our-goods__title{
+  font-family: 'Yeseva One';
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.875rem;
+  margin-bottom: .938rem;
+}
+.our-goods__descr{
+  line-height: 1rem;
+}
+
+.our-goods__items {
+  position: relative;
+  padding-left: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 23.438rem);
+  gap: 3.125rem 1.25rem;
+  justify-items: center;
+  &::before {
+    content:url('../images/icons/tiny-candle-icon.png');
+    position: absolute;
+    left: 0;
+    bottom: -5.25rem;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 1.313rem;
+    bottom: -4.438rem;
+    height: .063rem;
+    background-color: var(--burger);
+    width: 62.5rem;
+  }
+}
+
+.our-goods__item {
+  max-width: 18.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-goods__item-img {
+  margin-bottom: .5rem;
+}
+
+.our-goods__item-text {
+  text-align: center;
+}
+
+.our-goods__item-price {
+  margin-bottom: .75rem;
+}
+
+.our-goods__item-name {
+  margin-bottom: 1rem;
+}
+
+.our-goods__item-price,
+.our-goods__item-name {
+  font-family: Yeseva One;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.our-goods__item-descr {
+  font-size: 12px;
+  margin-bottom: 1.688rem;
+  line-height: .813rem;
+}
+
+.our-goods__item-btn {
+  max-width: 9.379rem;
+  height: 3.25rem;
+  padding: 1.125rem 3.375rem;
+  background-color: var(--button);
+  border: none;
+}
+  /* OUR GOOD END*/
 
 /* FOOTER START */
 
