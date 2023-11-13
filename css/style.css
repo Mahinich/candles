@@ -308,12 +308,11 @@ main {
 }
 
 .our-goods__item-btn {
-  max-width: 9.379rem;
+  min-width: 9.379rem;
   height: 3.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 1.125rem 3.375rem; */
   background-color: var(--button);
   border: none;
 }
